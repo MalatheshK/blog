@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for obj in obj%}
+<p></p>
+<div class="container-fluid">
+<div class="card border-secondary mb-3" style="width: 80rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{obj.name}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+      <p class="card-text">{{obj.post}}</p>
+      <a href="#" class="card-link">{{obj.email}}</a>
+      <p></p>
+    </div>
+  </div>
+</div>
+  <p></p>
+{% endfor %}
+{% endblock %}
